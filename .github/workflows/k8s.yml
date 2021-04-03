@@ -22,3 +22,4 @@ jobs:
       - name: Interact with the cluster to get nodes
         run: kubectl get nodes
       - name: Interact with the cluster to get helm version
+        run: helm version
