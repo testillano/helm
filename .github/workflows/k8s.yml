@@ -1,0 +1,24 @@
+name: Minikube interaction
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      # Push events on master branch
+      - master
+
+jobs:
+  minikube:
+    name: Example Minikube-Kubernetes Cluster interaction
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Minikube
+        uses: manusa/actions-setup-minikube@v2.3.1
+        with:
+          minikube version: 'v1.16.0'
+          kubernetes version: 'v1.19.2'
+          github token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Interact with the cluster to get nodes
+        run: kubectl get nodes
+      - name: Interact with the cluster to get helm version
