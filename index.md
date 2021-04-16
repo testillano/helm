@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to @testillano helm repository
 
-You can use the [editor on GitHub](https://github.com/testillano/helm/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Here, `helm` packaged charts from different account repositories are stored to be served.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Download helm packages
 
-### Markdown
+To fetch helm chart packages, you may firstly add this `helm` repository to your list:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+helm repo add erthelm https://testillano.github.io/helm
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Then, just fetch the chart name and version desired, for example:
 
-### Jekyll Themes
+```bash
+helm fetch erthelm/h2agent --version=1.0.0
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/testillano/helm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+You could also include `helm` umbrella dependencies as follows:
 
-### Support or Contact
+   ```yaml
+   dependencies:
+     - name: h2agent
+       version: 1.0.0
+       repository: alias:erthelm
+       alias: h2server
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+     - name: h2agent
+       version: 1.0.0
+       repository: alias:erthelm
+       alias: h2server2
+   ```
