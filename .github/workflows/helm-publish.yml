@@ -47,9 +47,11 @@ jobs:
       #  with:
       #    charts_dir: cloned/h2agent/helm
 
-      #- name: Change directory to h1mock
-      #  run: |
-      #    cd cloned/h1mock
+      - name: Force local dummy change
+        run: |
+          touch $RANDOM
+          git add .
+          git commit -m 'dummy change to fool helm releaser'
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.2.0
