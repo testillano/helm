@@ -20,6 +20,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: testillano/h2agent
+          ref: master
+          
           path: cloned/h2agent
 
       - name: Checkout
@@ -27,6 +29,7 @@ jobs:
         with:
           repository: testillano/h1mock
           path: cloned/h1mock
+          ref: master
 
       - name: Configure Git
         run: |
