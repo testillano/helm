@@ -16,6 +16,6 @@ helm repo add erthelm https://testillano.github.io/helm
 
 ```bash
 helm repo update
-helm search repo ^ert-
+helm search repo erthelm/
 ```
 
