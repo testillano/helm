@@ -1,7 +1,9 @@
 # @testillano helm repository
 
 This project hosts the stuff to build `helm` charts from `@testillano` github repositories.
+
 GitHub page for the `helm` repository can be accessed [here](https://testillano.github.io/helm/).
+
 Git project for the `helm` repository can be accessed on branch [gh-pages](https://github.com/testillano/helm/tree/gh-pages).
 
 ## Add helm repository
