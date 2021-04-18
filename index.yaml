@@ -19,10 +19,11 @@ entries:
   h1mock:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-17T23:52:04.23973681Z"
+    created: "2021-04-18T00:35:50.682070022Z"
     description: HTTP/1 Mock Server Helm chart
-    digest: 6610c919797a55d0040ae3718020d6eebd4cd1e3ccea65f702458b38ef7c6c4e
+    digest: f7e2ac6be7d272a6c8ed85e4b943a92ceb32ddcbb6d292540fbbe4127d9ebe94
     name: h1mock
+    type: application
     urls:
     - https://testillano.github.io/helm/h1mock-1.0.0.tgz
     version: 1.0.0
@@ -36,4 +37,4 @@ entries:
     urls:
     - https://testillano.github.io/helm/h2agent-1.0.0.tgz
     version: 1.0.0
-generated: "2021-04-18T00:30:49.622029775Z"
+generated: "2021-04-18T00:35:50.681580622Z"
