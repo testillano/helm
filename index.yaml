@@ -3,14 +3,13 @@ entries:
   ct-h1mock:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-23T05:19:13.698113987Z"
+    created: "2021-04-24T19:28:43.41237373Z"
     dependencies:
-    - alias: h1mock
-      name: h1mock
+    - name: h1mock
       repository: file://../h1mock
       version: 1.0.0
     description: Component test chart for h1mock
-    digest: 1c0c265fdfed27c1180f8ba231c40c395a852e6182cda5fa8c4f20fbe1c5e833
+    digest: 2f0b85d9ec7a3f87d38c0d2e8ce9c3aa638cef63382a461b1c2b641a2e94316b
     name: ct-h1mock
     urls:
     - https://testillano.github.io/helm/ct-h1mock-1.0.0.tgz
@@ -33,9 +32,9 @@ entries:
   h1mock:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-23T05:19:13.698704283Z"
+    created: "2021-04-24T19:28:43.412894266Z"
     description: HTTP/1 Mock Server Helm chart
-    digest: d9f7e680363eba7b5600140b6d20ed4caae7ce014c991507569e993876420c41
+    digest: 6333f8761f3044c8c933e18e06f3d09efb8d7363c804242ec340debe48088b1b
     name: h1mock
     type: application
     urls:
@@ -52,4 +51,4 @@ entries:
     urls:
     - https://testillano.github.io/helm/h2agent-1.0.0.tgz
     version: 1.0.0
-generated: "2021-04-23T05:19:13.696562396Z"
+generated: "2021-04-24T19:28:43.411224249Z"
