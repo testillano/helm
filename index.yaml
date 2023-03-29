@@ -17,14 +17,14 @@ entries:
   ct-h2agent:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-03-28T21:09:17.321521377Z"
+    created: "2023-03-29T00:18:53.374081386Z"
     dependencies:
     - alias: h2agent
       name: h2agent
       repository: file://../h2agent
       version: 1.0.0
     description: Component test chart for h2agent
-    digest: f08fe43d8f76f40d66fb632831904783da7cc2b6ea235636563d84cf7c9cb974
+    digest: cc3f985f9343dfc0d54dd2f33c142f4158c852f71262882a41325fd185a09f13
     name: ct-h2agent
     urls:
     - https://testillano.github.io/helm/ct-h2agent-1.0.0.tgz
@@ -43,12 +43,12 @@ entries:
   h2agent:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-03-28T21:09:17.322276526Z"
+    created: "2023-03-29T00:18:53.374602482Z"
     description: h2agent helm chart for Kubernetes
-    digest: b5ce755d19a731aedf78a49a258389a8f5ba84f0b4e31facfca5a76fbdf96047
+    digest: 852c7258694f7f50a34e896e6d22ec0bde0e7340d6ea28aafa1742d3c69e6704
     name: h2agent
     type: application
     urls:
     - https://testillano.github.io/helm/h2agent-1.0.0.tgz
     version: 1.0.0
-generated: "2023-03-28T21:09:17.320303397Z"
+generated: "2023-03-29T00:18:53.372856795Z"
