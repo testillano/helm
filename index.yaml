@@ -29,6 +29,25 @@ entries:
     urls:
     - https://testillano.github.io/helm/ct-h2agent-1.0.0.tgz
     version: 1.0.0
+  ct-h2diagent:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-11-26T01:20:26.631251729Z"
+    dependencies:
+    - alias: server
+      name: h2diagent
+      repository: file://../h2diagent
+      version: 1.0.0
+    - alias: client
+      name: h2diagent
+      repository: file://../h2diagent
+      version: 1.0.0
+    description: Component test chart for h2diagent (server + client Diameter peers)
+    digest: acd9e0aa597cc7b80f1a4cfbeafc8c6caf8dc39bf599ea1e68d70c9b3d632d99
+    name: ct-h2diagent
+    urls:
+    - https://testillano.github.io/helm/ct-h2diagent-1.0.0.tgz
+    version: 1.0.0
   h1mock:
   - apiVersion: v2
     appVersion: "1.0"
@@ -51,4 +70,15 @@ entries:
     urls:
     - https://testillano.github.io/helm/h2agent-1.0.0.tgz
     version: 1.0.0
-generated: "2026-11-16T17:39:17.924102307Z"
+  h2diagent:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-11-26T01:20:26.632706853Z"
+    description: h2diagent (Diameter <-> HTTP/2 gateway); pure translator by default,
+      optional h2agent mock-brain sidecar
+    digest: de324cd23438399164e3f02573265ce6009c61466d9bde507ce42e56aa816975
+    name: h2diagent
+    urls:
+    - https://testillano.github.io/helm/h2diagent-1.0.0.tgz
+    version: 1.0.0
+generated: "2026-11-26T01:20:26.628636509Z"
